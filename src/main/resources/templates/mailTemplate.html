@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<link th:href="@{${pageContext.request.contextPath}/css/bootstrap.css}" rel="stylesheet" />
+</head>
+<body>
+	<div class="jumbotron">
+		<h3 class="text-center text-primary" style="color: 'red'">Custom Design Mail</h3>
+	</div>
+	<div class="container" bgcolor="#777777" style="padding: 30px 30px 30px 30px;">
+		<h4 class="text-danger">
+			<span th:text="${message}"></span>
+		</h4>
+	</div>
+	<hr>
+
+	<script type="text/javascript" th:src="@{${pageContext.request.contextPath}/js/jquery-3.1.1.js}"></script>
+	<script type="text/javascript" th:src="@{${pageContext.request.contextPath}/js/bootstrap.js}"></script>
+
+</body>
+</html>
